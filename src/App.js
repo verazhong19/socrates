@@ -19,12 +19,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           {/* leftovers */}
-          <img src={'https://i.pinimg.com/originals/c5/67/60/c56760404cac5ca001c2ba11e330d606.jpg'} className="App-logo" alt="logo" />
-          <p>
-            Click <code>the buttons </code> to pick a Pleb.
-          </p>
-         
-          <a
+          <a id='pleb'
             className="App-link"
             href="https://medium.com/applab"
             target="_blank"
@@ -33,6 +28,12 @@ class App extends Component {
             Plato's Plebians
           </a>
 
+          <img src={'https://i.pinimg.com/originals/c5/67/60/c56760404cac5ca001c2ba11e330d606.jpg'} className="App-logo" alt="logo" />
+          <p id='pickApleb'>
+            Click the buttons to pick a Pleb.
+          </p>
+         
+          
       <div>
         <DisplayName student={this.state.nowSelectedStudent.name} />
       </div>    

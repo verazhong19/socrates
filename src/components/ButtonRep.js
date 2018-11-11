@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ButtonRep extends Component {
     render() { 
         return (
-            <button onClick={this.props.onClick} >
+            <button className='btn btn-success' onClick={this.props.onClick} >
                 Repetition
             </button>
         );
