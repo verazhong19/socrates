@@ -12,6 +12,9 @@ const studentList = [
     {name: 'Ellen', counter: 0},
     {name: 'Brett', counter: 0},
     {name: 'Louis', counter: 0},
+    {name: 'Tiger', counter: 0},
+    {name: 'Zersh', counter: 0},
+
 ];
 
 export default studentList;
