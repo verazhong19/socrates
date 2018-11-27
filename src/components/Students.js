@@ -1,19 +1,10 @@
 const studentList = [
-    {name: 'Vera', counter: 0},
-    {name: 'Findlay', counter: 0},
-    {name: 'Daniel', counter: 0},
-    {name: 'Shirley', counter: 0},
-    {name: 'Richie', counter: 0},
-    {name: 'Vincent', counter: 0},
-    {name: 'Cecilia', counter: 0},
-    {name: 'Robert', counter: 0},
-    {name: 'Kristine', counter: 0},
-    {name: 'Bishka', counter: 0},
-    {name: 'Ellen', counter: 0},
-    {name: 'Brett', counter: 0},
-    {name: 'Louis', counter: 0},
-    {name: 'Tiger', counter: 0},
-    {name: 'Zersh', counter: 0},
+    {name: 'Wang Peng', counter: 0, avatar: 'https://i.ibb.co/xfng2p1/wangpeng.png', question:`How did China's GDP grow so rapidly?`},
+    {name: 'Li You', counter: 0, avatar:'https://i.ibb.co/PmtczJf/Screen-Shot-2018-11-27-at-5-39-01-PM.png',question:'Why was Hamlet emotionally unstable in Act 1?'},
+    {name: 'Gao Wenzhong', counter: 0, avatar:'https://i.ibb.co/R2dFRKV/gaowenzhong.png',question:'Did the quick brown fox really jump over the lazy dog?'},
+    {name: 'Gao Xiaoyin', counter: 0, avatar:'https://i.ibb.co/7yGkTZg/gaoxiaoyin.png',question:'Are dogs objectively better than cats?'},
+    {name: `Bai Ying'ai`, counter: 0, avatar:'https://i.ibb.co/xCw6V9m/baiyingai.png',question:'Why is grass green?'},
+
 
 ];
 

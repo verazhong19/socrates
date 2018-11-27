@@ -6,58 +6,44 @@ import randomNoRep from './components/randomNoRep';
 import randomRep from './components/randomRep';
 import ButtonNoRep from './components/ButtonNoRep';
 import ButtonRep from './components/ButtonRep';
+import Avatar from './components/Avatar';
+import Flippy, { FrontSide, BackSide } from 'react-flippy';
+import Questions from './components/Questions';
+
 
 class App extends Component {
 
   //functions
   state = {
-    nowSelectedStudent: {name: " "},
+    nowSelectedStudent: {name: " ", question:''},
   };
   
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          {/* leftovers */}
-          <a id='pleb'
-            className="App-link"
-            href="https://medium.com/applab"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Plato's Plebians
-          </a>
+<div className="App">
+    <header className="App-header">
+        <div className="plato"> <h1>Plato's Plebians</h1>
+        </div>
 
-          <img src={'https://i.pinimg.com/originals/c5/67/60/c56760404cac5ca001c2ba11e330d606.jpg'} className="App-logo" alt="logo" />
-          <p id='pickApleb'>
-            Click the buttons to pick a Pleb.
-          </p>
-         
-          
-      <div>
-        <DisplayName student={this.state.nowSelectedStudent.name} />
-      </div>    
-
-      <div>
-        <ButtonNoRep onClick={function () {
-          this.setState({
-            nowSelectedStudent: randomNoRep(studentList),
-          })
-        }.bind(this)} />
-      </div>
-
-      <div>
-        <ButtonRep onClick={function () {
-          this.setState({
-            nowSelectedStudent: randomRep(studentList),
-          })
-        }.bind(this)} />
-      </div>
+        <Flippy flipDirection="horizontal" flipOnClick={true} ref={(r)=> this.flippy = r} style={{ width: '300px', height: '300px' }}>
 
 
-        </header>
-      </div>
-    );
+            <FrontSide style={{ backgroundColor: '#41669d', }}>
+                <DisplayName student={this.state.nowSelectedStudent.name} />
+                <Avatar image={this.state.nowSelectedStudent.avatar}/>
+            </FrontSide>
+            <BackSide style={{ backgroundColor: '#41669d'}}>
+            <Questions query={this.state.nowSelectedStudent.question}/>
+            </BackSide>
+        </Flippy>
+        <div>
+            <ButtonNoRep onClick={function () { this.setState({ nowSelectedStudent: randomNoRep(studentList), }) }.bind(this)} />
+            <ButtonRep onClick={function () { this.setState({ nowSelectedStudent: randomRep(studentList), }) }.bind(this)} />
+        </div>
+
+
+    </header>
+</div>    );
   }
 }
 

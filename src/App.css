@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.plato {
+  color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(116, 116, 119), 0 0 5px rgb(49, 49, 70);
+}
+
 #pleb{
   z-index: 1;
 
@@ -18,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(to right, rgba(17, 123, 245, 0.733) , rgba(222, 231, 179, 0.938));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +31,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
