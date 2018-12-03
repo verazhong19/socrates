@@ -15,7 +15,7 @@ class App extends Component {
 
   //functions
   state = {
-    nowSelectedStudent: {name: " ", question:''},
+    nowSelectedStudent: {name: " ", question:'', avatar:"https://i.ibb.co/SNDH066/start.png"},
   };
   
   render() {
