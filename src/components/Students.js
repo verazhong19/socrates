@@ -1,5 +1,5 @@
 const studentList = [
-    {name: 'Wang Peng', counter: 0, avatar: 'https://i.ibb.co/xfng2p1/wangpeng.png', question:`How did China's GDP grow so rapidly?`},
+    {name: 'Wang Peng', counter: 0, avatar: 'https://i.ibb.co/xfng2p1/wangpeng.png', question:''},
     {name: 'Li You', counter: 0, avatar:'https://i.ibb.co/PmtczJf/Screen-Shot-2018-11-27-at-5-39-01-PM.png',question:'Why was Hamlet emotionally unstable in Act 1?'},
     {name: 'Gao Wenzhong', counter: 0, avatar:'https://i.ibb.co/R2dFRKV/gaowenzhong.png',question:'Did the quick brown fox really jump over the lazy dog?'},
     {name: 'Gao Xiaoyin', counter: 0, avatar:'https://i.ibb.co/7yGkTZg/gaoxiaoyin.png',question:'Are dogs objectively better than cats?'},

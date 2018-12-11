@@ -12,8 +12,8 @@
 
 }
 
-#pickApleb{
-  z-index: 1;
+.pickApleb{
+  overflow-y: scroll;
 }
 
 .App-logo {
