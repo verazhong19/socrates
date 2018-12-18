@@ -6,4 +6,4 @@ This is the teacher edition. This application will allow for random student sele
 Cards will indicate the student that is presently selected. In order to cycle through the student roster, click either *Repetition* or *No Repetition* for their respective functions. Tapping on the card will flip to show any questions that the student may have submitted.
 
 #Link
-Click here to see the prototype(https://platosplebs.herokuapp.com)
+[Click here to see the prototype](https://platosplebs.herokuapp.com)
